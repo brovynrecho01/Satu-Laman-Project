@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 530" fill="none">
+  <defs>
+    <!-- Gradients matching uploaded SatuLaman logo -->
+    <!-- Leaf Gradients -->
+    <linearGradient id="silverLeafLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbc8d4" />
+      <stop offset="60%" stop-color="#a8a3b1" />
+      <stop offset="100%" stop-color="#918c9b" />
+    </linearGradient>
+    <linearGradient id="silverLeafRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2f0f7" />
+      <stop offset="60%" stop-color="#dedbe6" />
+      <stop offset="100%" stop-color="#c2becd" />
+    </linearGradient>
+    <linearGradient id="sageLeafBehind" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#73a88c" />
+      <stop offset="100%" stop-color="#497c61" />
+    </linearGradient>
+
+    <!-- S Ribbon Body Gradients -->
+    <linearGradient id="sRibbonLight" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#b2d6c2" />
+      <stop offset="40%" stop-color="#8dbda4" />
+      <stop offset="100%" stop-color="#69a383" />
+    </linearGradient>
+    <linearGradient id="sRibbonMain" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#3d8f61" />
+      <stop offset="45%" stop-color="#2d774e" />
+      <stop offset="85%" stop-color="#1d5c38" />
+      <stop offset="100%" stop-color="#15492b" />
+    </linearGradient>
+    <linearGradient id="sRibbonLower" x1="0%" y1="20%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#4ea274" />
+      <stop offset="50%" stop-color="#338056" />
+      <stop offset="100%" stop-color="#21613d" />
+    </linearGradient>
+    <linearGradient id="shieldOutline" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c724b" />
+      <stop offset="60%" stop-color="#1d5836" />
+      <stop offset="100%" stop-color="#134125" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. SECONDARY SAGE LEAF (UNDERNEATH) -->
+  <path
+    d="M175 220C170 170 195 110 240 75C245 115 235 175 195 215C188 222 181 224 175 220Z"
+    fill="url(#sageLeafBehind)"
+  />
+
+  <!-- 2. PRIMARY SILVER/LAVENDER LEAF (TOP LEFT) -->
+  <!-- Left Shade of Leaf -->
+  <path
+    d="M72 65C125 90 152 165 158 225C138 200 115 150 92 110C82 92 76 78 72 65Z"
+    fill="url(#silverLeafLeft)"
+  />
+  <!-- Right Highlight of Leaf -->
+  <path
+    d="M72 65C100 115 155 180 225 228C195 232 170 230 158 225C152 165 125 90 72 65Z"
+    fill="url(#silverLeafRight)"
+  />
+
+  <!-- 3. MAIN S-SWOOSH - TOP INNER RIBBON (Lighter mint/sage highlight) -->
+  <path
+    d="M260 125C268 80 305 28 375 25C425 23 445 55 430 110C412 118 368 128 320 148C282 164 266 182 258 195C252 170 255 145 260 125Z"
+    fill="url(#sRibbonLight)"
+  />
+
+  <!-- 4. TOP S-HEAD AND UPPER ARCH (Rich emerald gradient) -->
+  <path
+    d="M375 25C425 23 445 55 430 110C410 117 375 128 335 146C265 178 200 245 235 340C215 305 210 240 250 180C285 128 330 95 385 70C365 48 350 35 375 25Z"
+    fill="url(#sRibbonMain)"
+  />
+  <!-- S Upper top-right swoosh curve -->
+  <path
+    d="M370 25C418 24 455 58 435 115C420 120 375 130 330 148C285 168 250 198 238 238C222 205 232 160 262 120C295 78 335 45 370 25Z"
+    fill="url(#sRibbonMain)"
+  />
+  <!-- S Top Bevel cap -->
+  <path
+    d="M370 25C395 24 425 42 435 70C428 92 418 108 402 114C392 78 378 48 370 25Z"
+    fill="url(#sRibbonLight)"
+    opacity="0.85"
+  />
+
+  <!-- 5. S MAIN BODY SWEEP (From center down to right outer loop) -->
+  <path
+    d="M238 238C265 248 318 275 365 315C425 368 442 445 435 510C415 500 390 480 378 450C375 395 350 348 305 310C268 278 230 255 208 245C220 240 230 238 238 238Z"
+    fill="url(#sRibbonLower)"
+  />
+
+  <!-- S Right Outer 3D Curve Ribbon (The prominent outer green side of the S) -->
+  <path
+    d="M335 146C388 168 435 218 438 275C442 345 398 425 352 470C402 430 445 355 438 280C432 215 385 168 335 146Z"
+    fill="url(#sRibbonLight)"
+  />
+  <path
+    d="M335 146C395 175 442 225 440 295C438 370 380 455 315 495C385 455 445 375 442 290C440 215 395 165 335 146Z"
+    fill="url(#sRibbonMain)"
+  />
+
+  <!-- 6. LOWER SPEECH / SHIELD BUBBLE (Bottom section of the S) -->
+  <!-- Outer Dark Shield Path -->
+  <path
+    d="M125 285C160 270 235 250 310 262C310 262 335 340 330 405C325 455 290 488 280 520C255 475 220 460 175 445C135 430 105 375 105 325C105 305 112 292 125 285Z"
+    fill="url(#shieldOutline)"
+  />
+
+  <!-- 3D Shadow edge of the shield -->
+  <path
+    d="M105 325C102 360 120 405 155 432C178 450 205 460 235 475C260 488 275 510 282 522C278 505 272 485 260 472C225 452 195 440 170 422C138 398 122 360 125 325C125 305 115 312 105 325Z"
+    fill="#133d23"
+  />
+
+  <!-- Inner White Shield Cavity -->
+  <path
+    d="M150 295C195 282 255 280 295 292C305 345 295 400 275 428C258 452 245 465 240 482C225 455 198 440 168 425C140 410 135 365 140 325C142 308 145 300 150 295Z"
+    fill="#ffffff"
+  />
+
+  <!-- 7. INNER SHOPPING BAG + CHAT / PIN ICON (Green emblem inside white cavity) -->
+  <!-- Bag Handle -->
+  <path
+    d="M205 322V305C205 292 215 282 228 282C241 282 251 292 251 305V322"
+    stroke="#266b44"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- Bag Body with bottom chat / pointer tail -->
+  <path
+    d="M194 322H262L272 388C272 396 265 404 256 404H240L232 418C230 421 226 421 224 418L216 404H200C191 404 184 396 184 388L194 322Z"
+    stroke="#266b44"
+    stroke-width="7"
+    stroke-linejoin="round"
+    fill="#ffffff"
+  />
+
+  <!-- Shopping Bag Bottom Chat Pointer Accent Fill -->
+  <path
+    d="M216 402L228 420L240 402H216Z"
+    fill="#266b44"
+  />
+</svg>

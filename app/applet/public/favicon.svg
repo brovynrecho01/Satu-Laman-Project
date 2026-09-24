@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="favLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dedbe6" />
+      <stop offset="100%" stop-color="#9a95a4" />
+    </linearGradient>
+    <linearGradient id="favGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d8f61" />
+      <stop offset="50%" stop-color="#266b44" />
+      <stop offset="100%" stop-color="#15492b" />
+    </linearGradient>
+    <linearGradient id="favLightGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a4d1b8" />
+      <stop offset="100%" stop-color="#69a584" />
+    </linearGradient>
+  </defs>
+
+  <!-- Silver leaf top left -->
+  <path
+    d="M20 18C34 24 40 42 42 56C36 50 30 38 24 28C22 24 21 21 20 18Z"
+    fill="url(#favLeaf)"
+  />
+  <path
+    d="M20 18C27 30 40 46 56 58C48 60 42 58 42 56C40 42 34 24 20 18Z"
+    fill="#edeaf2"
+  />
+
+  <!-- Top S curve light inner ribbon -->
+  <path
+    d="M66 8C78 7 88 12 92 24C88 26 78 28 68 33C58 37 54 42 52 46C50 40 51 34 52 28C54 18 60 9 66 8Z"
+    fill="url(#favLightGreen)"
+  />
+
+  <!-- S main body sweep -->
+  <path
+    d="M66 8C78 7 88 12 92 24C95 32 94 40 92 48C88 60 76 74 65 84C78 74 94 58 96 42C97 32 94 22 88 16C82 10 74 8 66 8Z"
+    fill="url(#favGreen)"
+  />
+
+  <!-- S lower right ribbon -->
+  <path
+    d="M82 38C94 45 104 57 104 72C104 89 91 107 76 116C92 106 106 87 106 68C106 52 94 40 82 38Z"
+    fill="url(#favGreen)"
+  />
+
+  <!-- Lower bubble / shield outline -->
+  <path
+    d="M32 68C42 63 60 58 78 61C78 61 84 80 82 96C80 108 72 116 70 124C64 113 55 109 44 105C34 102 26 88 26 76C26 71 28 69 32 68Z"
+    fill="url(#favGreen)"
+  />
+
+  <!-- White shield interior -->
+  <path
+    d="M38 71C50 67 66 66 76 70C78 84 76 98 70 106C65 112 62 115 60 120C56 113 49 109 42 105C35 101 34 90 35 79C36 74 37 72 38 71Z"
+    fill="#ffffff"
+  />
+
+  <!-- Shopping Bag Icon inside shield -->
+  <path
+    d="M51 78V74C51 70.7 53.7 68 57 68C60.3 68 63 70.7 63 74V78"
+    stroke="#266b44"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <path
+    d="M48 78H66L69 95C69 97 67 99 65 99H61L58 103C57.5 103.7 56.5 103.7 56 103L53 99H49C47 99 45 97 45 95L48 78Z"
+    stroke="#266b44"
+    stroke-width="2.5"
+    stroke-linejoin="round"
+    fill="#ffffff"
+  />
+  <path
+    d="M54 98L57 103L60 98H54Z"
+    fill="#266b44"
+  />
+</svg>

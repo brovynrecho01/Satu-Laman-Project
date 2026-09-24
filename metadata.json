@@ -1,0 +1,6 @@
+{
+  "name": "SatuLaman — Jasa Landing Page UMKM & Bisnis Kecil",
+  "description": "Jasa pembuatan landing page & digital experience profesional untuk UMKM dan bisnis kecil. Menyatukan info produk, lokasi, dan WhatsApp dalam satu halaman yang mudah dipahami pelanggan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
