@@ -15,10 +15,10 @@ export const ProcessSectionNew: React.FC = () => {
 
   const stepIcons = [
     CreditCard, // 1. Pilih Slot & Pembayaran
-    ClipboardList, // 2. Isi Formulir (Intake Form)
+    ClipboardList, // 2. Isi Formulir Data Bisnis
     Hammer, // 3. Kami Bangun Sistemnya
     Smartphone, // 4. Review & Revisi
-    Rocket, // 5. Go Live & Handoff
+    Rocket, // 5. Go Live & Siap Digunakan
   ];
 
   return (

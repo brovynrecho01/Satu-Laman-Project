@@ -12,7 +12,7 @@ export const ProblemSection: React.FC = () => {
         <div className="max-w-4xl mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-red-50 text-red-700 border border-red-200/80 rounded-full px-3.5 py-1 text-xs font-semibold mb-4">
             <AlertCircle size={14} />
-            <span>Problem Agitation</span>
+            <span>Kondisi Yang Sering Terjadi</span>
           </div>
           <h2 className="text-[clamp(1.8rem,4.5vw,3.4rem)] font-medium leading-[1.15] tracking-[-0.02em] text-gray-900 mb-5">
             {problemAgitation.headline}

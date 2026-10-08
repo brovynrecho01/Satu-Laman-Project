@@ -24,13 +24,13 @@ export const WhatYouGetSection: React.FC = () => {
   ];
 
   return (
-    <section id="deliverables" className="bg-stone-50 py-16 sm:py-20 lg:py-28 border-t border-gray-200/60">
+    <section id="fasilitas" className="bg-stone-50 py-16 sm:py-20 lg:py-28 border-t border-gray-200/60">
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="max-w-4xl mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-white text-gray-800 border border-gray-300 rounded-full px-3.5 py-1 text-xs font-semibold mb-4 shadow-2xs">
             <Sparkles size={14} className="text-[#F26522]" />
-            <span>Deliverables</span>
+            <span>Apa Yang Anda Dapatkan</span>
           </div>
           <h2 className="text-[clamp(1.8rem,4.5vw,3.4rem)] font-medium leading-[1.15] tracking-[-0.02em] text-gray-900 mb-4">
             {deliverables.headline}

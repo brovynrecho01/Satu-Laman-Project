@@ -49,7 +49,7 @@ export const PricingSectionNew: React.FC = () => {
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#F26522] animate-ping" />
                 <span className="text-xs font-bold uppercase tracking-wider text-[#F26522]">
-                  Validasi Pasar — Slot Eksklusif
+                  Program Beta Terbatas — 5 Slot Tersedia
                 </span>
               </div>
               <div className="bg-orange-100 text-[#F26522] text-xs font-extrabold px-3 py-1 rounded-full flex items-center gap-1.5">

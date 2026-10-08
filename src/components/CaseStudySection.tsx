@@ -16,7 +16,7 @@ export const CaseStudySection: React.FC<CaseStudySectionProps> = ({ onOpenDemo }
         <div className="max-w-4xl mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-800 border border-gray-200 rounded-full px-3.5 py-1 text-xs font-semibold mb-4">
             <Store size={14} />
-            <span>Demo &amp; Case Study</span>
+            <span>Contoh Nyata UMKM</span>
           </div>
           <h2 className="text-[clamp(1.8rem,4.5vw,3.4rem)] font-medium leading-[1.15] tracking-[-0.02em] text-gray-900 mb-4">
             {demo.headline}
@@ -88,9 +88,15 @@ export const CaseStudySection: React.FC<CaseStudySectionProps> = ({ onOpenDemo }
                   </button>
                 )}
 
-                <span className="text-xs text-gray-500 font-medium">
-                  Bisa dicoba langsung dalam simulasi interaktif
-                </span>
+                <a
+                  href={TOKO_PAK_KADI.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 bg-white hover:bg-gray-100 text-gray-800 border border-gray-300 text-sm font-semibold px-5 py-3 rounded-full transition-colors cursor-pointer"
+                >
+                  <span>Kunjungi Web Asli ({TOKO_PAK_KADI.displayUrl})</span>
+                  <ExternalLink size={14} />
+                </a>
               </div>
             </div>
 
@@ -102,11 +108,11 @@ export const CaseStudySection: React.FC<CaseStudySectionProps> = ({ onOpenDemo }
               >
                 <div className="flex items-center justify-between border-b border-gray-100 pb-2.5 mb-3 text-xs">
                   <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block" />
-                    <span className="font-semibold text-gray-700">tokoberaspakkadi.id</span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block animate-pulse" />
+                    <span className="font-semibold text-gray-700 font-mono">{TOKO_PAK_KADI.displayUrl}</span>
                   </div>
                   <span className="text-[11px] font-semibold text-[#F26522] bg-orange-50 px-2 py-0.5 rounded-full">
-                    Klik Buka Demo
+                    Buka Demo Interaktif
                   </span>
                 </div>
 

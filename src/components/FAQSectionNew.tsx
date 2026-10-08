@@ -20,7 +20,7 @@ export const FAQSectionNew: React.FC = () => {
             <span>Pertanyaan Yang Sering Diajukan</span>
           </div>
           <h2 className="text-[clamp(1.8rem,4.5vw,3.4rem)] font-medium leading-[1.15] tracking-[-0.02em] text-gray-900 mb-4">
-            Frequently Asked Questions
+            Pertanyaan yang Sering Diajukan
           </h2>
           <p className="text-[16px] sm:text-[18px] text-gray-600 leading-relaxed max-w-3xl">
             Jawaban lengkap seputar sistem, pengerjaan, dan program Beta SatuLaman.

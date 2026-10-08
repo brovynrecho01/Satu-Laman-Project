@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Smartphone, MessageCircle, Sparkles, ExternalLink, ShieldCheck } from 'lucide-react';
 import { HeroShader } from './HeroShader';
-import { MASTER_COPY, TRUST_INDICATORS } from '../data/landingData';
+import { MASTER_COPY, TRUST_INDICATORS, TOKO_PAK_KADI } from '../data/landingData';
 
 interface AxionHeroProps {
   onOpenDemo?: () => void;
@@ -62,12 +62,21 @@ export const AxionHero: React.FC<AxionHeroProps> = ({ onOpenDemo }) => {
         <div className="w-full max-w-4xl mx-auto bg-white rounded-3xl p-4 sm:p-7 shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-gray-200/90 mb-12 sm:mb-16">
           {/* Card Top Bar */}
           <div className="flex items-center justify-between border-b border-gray-100 pb-3 mb-4 text-xs font-mono text-gray-500">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block" />
-              <span className="font-semibold text-gray-800">tokoberaspakkadi.id</span>
-            </div>
+            <a
+              href={TOKO_PAK_KADI.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-[#F26522] transition-colors group cursor-pointer"
+              title="Kunjungi website asli Toko Pak Kadi"
+            >
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block animate-pulse" />
+              <span className="font-semibold text-gray-800 group-hover:underline">
+                {TOKO_PAK_KADI.displayUrl}
+              </span>
+              <ExternalLink size={12} className="opacity-60 group-hover:opacity-100" />
+            </a>
             <span className="bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-full font-sans font-medium text-[11px]">
-              Live Portfolio
+              Website Aktif UMKM
             </span>
           </div>
 

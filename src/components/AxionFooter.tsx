@@ -19,7 +19,7 @@ export const AxionFooter: React.FC = () => {
 
           <div className="max-w-3xl relative z-10">
             <span className="text-xs font-bold uppercase tracking-wider text-orange-400 bg-orange-950/60 border border-orange-800/60 px-3 py-1 rounded-full inline-block mb-4">
-              SatuLaman Beta Sprint
+              Program Beta Terbatas
             </span>
 
             <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 leading-tight">
@@ -139,7 +139,7 @@ export const AxionFooter: React.FC = () => {
                 <span>Sisa 5 Slot Tersedia</span>
               </div>
               <p className="text-xs text-neutral-400 leading-relaxed">
-                Slot diberikan berurutan bagi pemilik bisnis yang sudah siap data dan mengisi intake form.
+                Slot diberikan berurutan bagi pemilik bisnis yang mendaftar dan melengkapi data bisnis.
               </p>
             </div>
           </div>

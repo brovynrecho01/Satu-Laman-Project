@@ -47,7 +47,7 @@ export default function App() {
         {/* 06. THE OFFER (BETA PRICING) SECTION */}
         <PricingSectionNew />
 
-        {/* 07. WORKFLOW / ONBOARDING SECTION (INTAKE FORM PROCESS) */}
+        {/* 07. ALUR PENGERJAAN & FORMULIR DATA */}
         <ProcessSectionNew />
 
         {/* 08. FAQ SECTION */}

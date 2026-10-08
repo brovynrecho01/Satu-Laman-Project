@@ -31,6 +31,8 @@ export const TOKO_PAK_KADI = {
   phone: '088217872159',
   waNumber: '6288217872159',
   operationalHours: 'Setiap Hari • 07:30 - 20:00 WIB',
+  liveUrl: 'https://tokopakkadi.lovable.app/',
+  displayUrl: 'tokopakkadi.lovable.app',
 };
 
 export function getWhatsAppUrl(customText?: string): string {
@@ -145,7 +147,7 @@ export const MASTER_COPY = {
   offer: {
     headline: 'SatuLaman Starter — Program Beta Terbatas',
     bodyCopy:
-      'Saat ini, SatuLaman sedang membuka 5 slot Beta untuk menguji coba sistem Digital Sales Page khusus untuk bisnis kecil. Peserta Beta akan mendapatkan harga khusus yang jauh lebih hemat sebagai imbalan atas feedback dan izin penggunaan hasil website sebagai portfolio/case study kami ke depannya.',
+      'Kabar baik untuk pemilik bisnis: Dalam rangka peluncuran perdana SatuLaman, kami membuka 5 slot spesial bagi pemilik UMKM untuk memiliki sistem Halaman Jualan Digital lengkap dengan biaya peluncuran super hemat. Anda mendapatkan sistem penjualan siap pakai dengan pendampingan penuh hingga live, sekaligus bisnis Anda berkesempatan kami tampilkan sebagai contoh sukses resmi SatuLaman.',
     normalPrice: 'Rp799.000',
     betaPrice: 'Rp499.000',
     priceNote: 'Pembayaran satu kali, terima beres.',
@@ -166,7 +168,7 @@ export const MASTER_COPY = {
       },
       {
         number: '2',
-        title: 'Isi Formulir (Intake Form)',
+        title: 'Isi Formulir Data Bisnis',
         description:
           'Cukup isi formulir data bisnis, produk, dan kontak yang kami sediakan.',
       },
@@ -183,7 +185,7 @@ export const MASTER_COPY = {
       },
       {
         number: '5',
-        title: 'Go Live & Handoff',
+        title: 'Go Live & Siap Digunakan',
         description:
           'Sistem siap digunakan di bio Instagram dan WhatsApp Anda!',
       },
@@ -204,7 +206,7 @@ export const MASTER_COPY = {
       {
         question: 'Berapa lama proses pembuatannya?',
         answer:
-          'Sekitar 3–5 hari kerja setelah Anda mengisi Formulir Informasi Bisnis (Intake Form).',
+          'Sekitar 3–5 hari kerja setelah Anda melengkapi data bisnis pada formulir yang kami sediakan.',
       },
       {
         question: 'Apakah ada biaya bulanan tersembunyi?',
