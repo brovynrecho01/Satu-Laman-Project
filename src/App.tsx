@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AxionNavbar } from './components/AxionNavbar';
 import { AxionHero } from './components/AxionHero';
 import { ProblemSection } from './components/ProblemSection';
-import { RealSolutionSection } from './components/RealSolutionSection';
+import { ValuePropSection } from './components/ValuePropSection';
 import { CaseStudySection } from './components/CaseStudySection';
 import { WhatYouGetSection } from './components/WhatYouGetSection';
 import { PricingSectionNew } from './components/PricingSectionNew';
@@ -10,6 +10,7 @@ import { ProcessSectionNew } from './components/ProcessSectionNew';
 import { FAQSectionNew } from './components/FAQSectionNew';
 import { AxionFooter } from './components/AxionFooter';
 import { DemoModal } from './components/DemoModal';
+import { FloatingWhatsAppButton } from './components/FloatingWhatsAppButton';
 
 export default function App() {
   const [isDemoOpen, setIsDemoOpen] = useState(false);
@@ -24,37 +25,40 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#EFEFEF] text-gray-900 flex flex-col font-sans selection:bg-[#F26522]/20 selection:text-[#F26522]">
-      {/* 1. NAVBAR */}
+      {/* NAVBAR */}
       <AxionNavbar onOpenDemo={handleOpenDemo} />
 
       <main className="flex-1">
-        {/* 2. HERO SECTION */}
+        {/* 01. HERO SECTION */}
         <AxionHero onOpenDemo={handleOpenDemo} />
 
-        {/* 3. KONDISI YANG SERING TERJADI (PROBLEM VS SOLUTION) */}
+        {/* 02. PROBLEM AGITATION SECTION */}
         <ProblemSection />
 
-        {/* 4. SOLUSI NYATA UMKM (6 CORE PILLARS) */}
-        <RealSolutionSection />
+        {/* 03. VALUE PROPOSITION SECTION */}
+        <ValuePropSection />
 
-        {/* 5. STUDI KASUS & CONTOH NYATA (TOKO BERAS PAK KADI) */}
+        {/* 04. DEMO & CASE STUDY (TOKO BERAS PAK KADI) */}
         <CaseStudySection onOpenDemo={handleOpenDemo} />
 
-        {/* 6. LENGKAP & SIAP PAKAI (11 FITUR DIGITAL STOREFRONT) */}
+        {/* 05. DELIVERABLES SECTION (SATULAMAN STARTER SYSTEM & WA SALES KIT) */}
         <WhatYouGetSection />
 
-        {/* 7. BIAYA JELAS & TRANSPARAN (PRICING & ADDONS) */}
+        {/* 06. THE OFFER (BETA PRICING) SECTION */}
         <PricingSectionNew />
 
-        {/* 8. ALUR PENGERJAAN (5 LANGKAH) */}
+        {/* 07. WORKFLOW / ONBOARDING SECTION (INTAKE FORM PROCESS) */}
         <ProcessSectionNew />
 
-        {/* 9. PERTANYAAN YANG SERING DIAJUKAN (FAQ) */}
+        {/* 08. FAQ SECTION */}
         <FAQSectionNew />
       </main>
 
-      {/* 10. PRE-FOOTER CTA & FOOTER */}
+      {/* 08. FINAL CTA SECTION & FOOTER */}
       <AxionFooter />
+
+      {/* FLOATING ACTION BUTTON (WHATSAPP QUICK LINK THROUGHOUT PAGE) */}
+      <FloatingWhatsAppButton />
 
       {/* INTERACTIVE DEMO MODAL FOR TOKO BERAS PAK KADI */}
       <DemoModal isOpen={isDemoOpen} onClose={handleCloseDemo} />

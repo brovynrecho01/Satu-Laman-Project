@@ -1,12 +1,15 @@
 import React from 'react';
-import { ArrowRight, Smartphone, MessageCircle, Palette, Globe, ExternalLink, Sparkles } from 'lucide-react';
+import { ArrowRight, Smartphone, MessageCircle, Sparkles, ExternalLink, ShieldCheck } from 'lucide-react';
 import { HeroShader } from './HeroShader';
+import { MASTER_COPY, TRUST_INDICATORS } from '../data/landingData';
 
 interface AxionHeroProps {
   onOpenDemo?: () => void;
 }
 
 export const AxionHero: React.FC<AxionHeroProps> = ({ onOpenDemo }) => {
+  const { hero } = MASTER_COPY;
+
   return (
     <section className="relative z-10 w-full pt-4 pb-14 sm:pb-20 lg:pb-24 overflow-hidden">
       {/* Background Animated Shader */}
@@ -15,43 +18,43 @@ export const AxionHero: React.FC<AxionHeroProps> = ({ onOpenDemo }) => {
       <div className="relative z-20 max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
         {/* TOP HERO TEXT */}
         <div className="max-w-4xl pt-4 sm:pt-8">
-          {/* Category Tag */}
-          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-xs border border-gray-300/80 rounded-full px-4 py-1.5 mb-5 sm:mb-7 shadow-2xs">
+          {/* Category Tag / Kicker */}
+          <div className="inline-flex items-center gap-2 bg-white/95 backdrop-blur-xs border border-gray-300/80 rounded-full px-4 py-1.5 mb-5 sm:mb-7 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[#F26522] animate-pulse" />
             <span className="text-[12px] sm:text-[13px] font-semibold text-gray-800 tracking-wide">
-              Jasa Landing Page untuk UMKM &amp; Bisnis Lokal
+              {hero.kicker}
             </span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-[clamp(2.1rem,6vw,4.4rem)] font-medium leading-[1.08] tracking-[-0.03em] text-gray-900 mb-5 sm:mb-6">
+          <h1 className="text-[clamp(2.1rem,5.5vw,4.2rem)] font-medium leading-[1.1] tracking-[-0.03em] text-gray-900 mb-5 sm:mb-6">
             Bisnis Anda Sudah Jalan.
             <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>
-            Sekarang Bikin Pelanggan Lebih Mudah Menemukannya.
+            Sekarang Bikin Pelanggan Lebih Mudah Memahami dan Menghubungi Anda.
           </h1>
 
           {/* Subheadline */}
           <p className="text-[15px] sm:text-[18px] lg:text-[20px] text-gray-700 leading-relaxed max-w-3xl mb-8">
-            Satu landing page untuk menampilkan produk, informasi bisnis, lokasi,
-            dan WhatsApp Anda dalam satu tempat yang rapi dan mudah dipahami pelanggan.
+            {hero.subHeadline}
           </p>
 
           {/* CTA Row */}
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <a
-              href="#contoh"
-              className="inline-flex items-center justify-center gap-3 bg-[#F26522] hover:bg-[#d95315] text-white text-[14px] sm:text-[15px] font-medium rounded-full pl-6 pr-2 py-2.5 transition-all duration-300 shadow-md hover:shadow-lg group w-fit cursor-pointer"
+              href="#penawaran"
+              className="inline-flex items-center justify-center gap-3 bg-[#F26522] hover:bg-[#d95315] text-white text-[14px] sm:text-[15px] font-semibold rounded-full pl-6 pr-2.5 py-2.5 transition-all duration-300 shadow-md hover:shadow-lg group w-fit cursor-pointer"
             >
-              <span>Lihat Contoh</span>
+              <span>{hero.buttonCtaPrimary}</span>
               <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#F26522] group-hover:rotate-[-45deg] transition-transform duration-300 shrink-0">
                 <ArrowRight size={16} />
               </div>
             </a>
 
-            <p className="text-xs sm:text-sm text-gray-600 font-medium">
-              Tanya-tanya dulu gratis. Tidak ada paksaan untuk langsung pesan.
-            </p>
+            <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600 font-medium">
+              <ShieldCheck size={16} className="text-emerald-600 shrink-0" />
+              <span>{hero.microcopy}</span>
+            </div>
           </div>
         </div>
 
@@ -64,7 +67,7 @@ export const AxionHero: React.FC<AxionHeroProps> = ({ onOpenDemo }) => {
               <span className="font-semibold text-gray-800">tokoberaspakkadi.id</span>
             </div>
             <span className="bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded-full font-sans font-medium text-[11px]">
-              Live
+              Live Portfolio
             </span>
           </div>
 
@@ -145,59 +148,32 @@ export const AxionHero: React.FC<AxionHeroProps> = ({ onOpenDemo }) => {
                 onClick={onOpenDemo}
                 className="inline-flex items-center justify-center gap-2 bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold px-4 py-2.5 rounded-full transition-all duration-200 cursor-pointer shadow-xs"
               >
-                <span>Contoh halaman nyata UMKM — Buka Demo Interaktif</span>
+                <span>Contoh nyata UMKM — Buka Demo Interaktif</span>
                 <ExternalLink size={13} />
               </button>
             )}
           </div>
         </div>
 
-        {/* Reassurance text */}
-        <p className="text-center text-xs sm:text-sm text-gray-600 font-medium mb-8 max-w-xl mx-auto">
-          Cocok untuk bisnis yang sudah aktif berjualan lewat Instagram, WhatsApp, marketplace, maupun pelanggan langsung.
-        </p>
-
         {/* 4 CORE PILLARS GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-          <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-5 border border-gray-200/90 shadow-2xs hover:shadow-sm transition-all duration-300">
-            <div className="w-10 h-10 rounded-xl bg-orange-50 text-[#F26522] flex items-center justify-center mb-3">
-              <Smartphone size={20} />
+          {TRUST_INDICATORS.map((indicator, idx) => (
+            <div
+              key={indicator.label}
+              className="bg-white/90 backdrop-blur-xs rounded-2xl p-5 border border-gray-200/90 shadow-2xs hover:shadow-sm transition-all duration-300"
+            >
+              <div className="w-9 h-9 rounded-xl bg-orange-50 text-[#F26522] flex items-center justify-center mb-3">
+                {idx === 0 && <Smartphone size={18} />}
+                {idx === 1 && <MessageCircle size={18} />}
+                {idx === 2 && <Sparkles size={18} />}
+                {idx === 3 && <ShieldCheck size={18} />}
+              </div>
+              <h4 className="font-bold text-sm text-gray-900 mb-1">{indicator.label}</h4>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                {indicator.desc}
+              </p>
             </div>
-            <h4 className="font-bold text-sm text-gray-900 mb-1">Mobile Friendly</h4>
-            <p className="text-xs text-gray-600 leading-relaxed">
-              Nyaman dibuka di semua jenis HP
-            </p>
-          </div>
-
-          <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-5 border border-gray-200/90 shadow-2xs hover:shadow-sm transition-all duration-300">
-            <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
-              <MessageCircle size={20} />
-            </div>
-            <h4 className="font-bold text-sm text-gray-900 mb-1">WhatsApp Ready</h4>
-            <p className="text-xs text-gray-600 leading-relaxed">
-              Langsung terhubung ke chat jualan
-            </p>
-          </div>
-
-          <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-5 border border-gray-200/90 shadow-2xs hover:shadow-sm transition-all duration-300">
-            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-3">
-              <Palette size={20} />
-            </div>
-            <h4 className="font-bold text-sm text-gray-900 mb-1">Custom Design</h4>
-            <p className="text-xs text-gray-600 leading-relaxed">
-              Sesuai identitas &amp; karakter bisnis
-            </p>
-          </div>
-
-          <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-5 border border-gray-200/90 shadow-2xs hover:shadow-sm transition-all duration-300">
-            <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center mb-3">
-              <Globe size={20} />
-            </div>
-            <h4 className="font-bold text-sm text-gray-900 mb-1">Siap Online</h4>
-            <p className="text-xs text-gray-600 leading-relaxed">
-              Langsung tayang &amp; siap dibagikan
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

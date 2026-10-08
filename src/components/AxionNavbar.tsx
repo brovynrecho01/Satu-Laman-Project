@@ -11,7 +11,7 @@ export const AxionNavbar: React.FC<AxionNavbarProps> = ({ onOpenDemo }) => {
 
   const navLinks: Array<{ label: string; href: string }> = [
     { label: 'Cara Kerja', href: '#cara-kerja' },
-    { label: 'Paket', href: '#paket' },
+    { label: 'Penawaran Beta', href: '#penawaran' },
     { label: 'Contoh', href: '#contoh' },
     { label: 'FAQ', href: '#faq' },
   ];

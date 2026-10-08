@@ -11,16 +11,24 @@ export interface SolutionFeature {
   tag: string;
 }
 
-export interface PricingPlan {
-  id: string;
-  name: string;
-  priceDisplay: string;
-  priceSubtitle?: string;
+export interface BetaOfferData {
+  title: string;
+  badge: string;
   description: string;
-  isPopular?: boolean;
-  features: string[];
-  ctaLabel: string;
+  normalPrice: string;
+  betaPrice: string;
+  paymentTerm: string;
+  slotsRemaining: number;
+  totalSlots: number;
+  ctaText: string;
   waMessage: string;
+  guaranteeText: string;
+}
+
+export interface DeliverableFeature {
+  title: string;
+  description: string;
+  iconName?: string;
 }
 
 export interface ProcessStep {
